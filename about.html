@@ -9,7 +9,34 @@
     <style>
         .about-hero {
             padding: var(--spacing-xl) 0 var(--spacing-lg) 0;
-            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            background: linear-gradient(135deg, #F0F7FF 0%, #E8F4FF 50%, #FFFFFF 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .about-hero .hero-title {
+            position: relative;
+            text-align: center;
+        }
+
+        .about-hero .hero-subtitle {
+            position: relative;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .about-content {
@@ -110,15 +137,11 @@
 
     <!-- About Hero -->
     <section class="about-hero">
-        <div class="container about-content">
-            <div style="display: flex; gap: 48px; align-items: flex-start; margin-bottom: 48px;">
-                <div style="flex: 1;">
-                    <h1 class="hero-title">About Me</h1>
-                    <p class="hero-subtitle">Building products and teams that balance speed with discovery, AI with human insight, and innovation with trust.</p>
-                </div>
-                <div style="flex-shrink: 0;">
-                    <img src="profile-photo.jpg" alt="Cassandra Skinner" style="width: 280px; height: 280px; object-fit: cover; border-radius: 50%; box-shadow: 0 12px 32px rgba(15, 98, 254, 0.2); border: 4px solid white;">
-                </div>
+        <div class="container">
+            <h1 class="hero-title">About Me</h1>
+            <p class="hero-subtitle">Building products and teams that balance speed with discovery, AI with human insight, and innovation with trust.</p>
+            <div style="margin-top: var(--spacing-md); position: relative;">
+                <img src="profile-photo.jpg" alt="Cassandra Skinner" style="width: 280px; height: 280px; object-fit: cover; border-radius: 50%; box-shadow: 0 12px 32px rgba(15, 98, 254, 0.2); border: 4px solid white;">
             </div>
         </div>
     </section>

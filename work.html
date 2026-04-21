@@ -10,6 +10,7 @@
         .work-hero {
             padding: var(--spacing-xl) 0 var(--spacing-lg) 0;
             background: linear-gradient(135deg, #F0F7FF 0%, #E8F4FF 50%, #FFFFFF 100%);
+            text-align: center;
             position: relative;
             overflow: hidden;
         }
@@ -18,7 +19,8 @@
             content: '';
             position: absolute;
             top: -50%;
-            right: -10%;
+            left: 50%;
+            transform: translateX(-50%);
             width: 600px;
             height: 600px;
             background: radial-gradient(circle, rgba(102, 126, 234, 0.15) 0%, transparent 70%);
@@ -175,8 +177,8 @@
     <!-- Work Hero -->
     <section class="work-hero">
         <div class="container">
-            <h1 class="hero-title" style="position: relative;">Strategic Work</h1>
-            <p class="hero-subtitle" style="position: relative;">Case studies showcasing product and design leadership, strategic alignment, and process innovation at scale.</p>
+            <h1 class="hero-title" style="position: relative; text-align: center;">Strategic Work</h1>
+            <p class="hero-subtitle" style="position: relative; text-align: center; margin-left: auto; margin-right: auto;">Case studies showcasing product and design leadership, strategic alignment, and process innovation at scale.</p>
         </div>
     </section>
 
