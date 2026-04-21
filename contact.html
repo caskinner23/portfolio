@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Cassandra Skinner</title>
+    <meta name="description" content="Get in touch with Cassandra Skinner for product strategy, design leadership, or UX research opportunities.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-hero {
+            padding: var(--spacing-xl) 0 var(--spacing-lg) 0;
+            background: linear-gradient(135deg, #F0F7FF 0%, #E8F4FF 50%, #FFFFFF 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: var(--spacing-xl) auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        .contact-form {
+            background: white;
+            padding: var(--spacing-lg);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(15, 98, 254, 0.15);
+            border: 2px solid var(--border-color);
+        }
+
+        .form-group {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 16px;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            font-family: 'Avenir', sans-serif;
+            font-size: 1rem;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(15, 98, 254, 0.1);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+            font-family: 'Avenir', sans-serif;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Avenir', sans-serif;
+            box-shadow: 0 4px 16px rgba(15, 98, 254, 0.3);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(15, 98, 254, 0.4);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: var(--spacing-lg);
+            padding-top: var(--spacing-lg);
+            border-top: 2px solid var(--border-color);
+        }
+
+        .contact-info p {
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-sm);
+            line-height: 1.8;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+            margin-top: var(--spacing-sm);
+        }
+
+        .contact-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .contact-link:hover {
+            background: var(--bg-subtle);
+        }
+
+        .success-message {
+            display: none;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: var(--spacing-md);
+            border-radius: 12px;
+            margin-bottom: var(--spacing-md);
+            text-align: center;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.svg" alt="CS" class="logo-image">
+                <div class="logo-text">
+                    <span class="logo-name">Cassandra (Casey) Skinner</span>
+                    <span class="logo-tagline">Product & Design Strategy Leader</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="work.html" class="nav-link">Work</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="hero-title" style="position: relative; text-align: center;">Get in Touch</h1>
+            <p class="hero-subtitle" style="position: relative; text-align: center; margin-left: auto; margin-right: auto;">Open to leadership opportunities in Product, Design, and UX Research. Also available for consulting, speaking, and strategic partnerships.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section>
+        <div class="contact-container">
+            <div id="success-message" class="success-message">
+                ✓ Thanks for reaching out! I'll get back to you soon.
+            </div>
+
+            <form id="contact-form" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="Your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Company / Organization</label>
+                    <input type="text" id="company" name="company" placeholder="Optional">
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">I'm reaching out about *</label>
+                    <select id="reason" name="reason" required>
+                        <option value="">Select an option...</option>
+                        <option value="Job Opportunity">Job Opportunity</option>
+                        <option value="Consulting/Contract Work">Consulting/Contract Work</option>
+                        <option value="Speaking Engagement">Speaking Engagement</option>
+                        <option value="Collaboration">Collaboration</option>
+                        <option value="General Inquiry">General Inquiry</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required placeholder="Tell me more about what you're looking for..."></textarea>
+                </div>
+
+                <!-- Hidden field for spam protection -->
+                <input type="text" name="_gotcha" style="display:none">
+
+                <!-- Formspree configuration -->
+                <input type="hidden" name="_subject" value="New contact form submission from portfolio">
+                <input type="hidden" name="_next" value="https://your-username.github.io/contact.html?success=true">
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <p><strong>Prefer to connect directly?</strong></p>
+                <div class="contact-links">
+                    <a href="mailto:caskinner23@gmail.com" class="contact-link">📧 Email</a>
+                    <a href="https://linkedin.com/in/skinnerc23" target="_blank" class="contact-link">💼 LinkedIn</a>
+                    <a href="resume.html" class="contact-link">📄 Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Cassandra Skinner. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="mailto:caskinner23@gmail.com">Email</a>
+                <a href="https://linkedin.com/in/skinnerc23" target="_blank">LinkedIn</a>
+                <a href="resume.html">Resume</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Handle form submission
+        const form = document.getElementById('contact-form');
+        const successMessage = document.getElementById('success-message');
+
+        // Check for success parameter in URL
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success') === 'true') {
+            successMessage.style.display = 'block';
+            form.style.display = 'none';
+            // Remove success parameter from URL
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+
+        form.addEventListener('submit', function(e) {
+            // Formspree will handle the submission
+            // The form will redirect to the _next URL on success
+        });
+    </script>
+</body>
+</html>

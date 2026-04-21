@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Work | Cassandra Skinner</title>
+    <meta name="description" content="Case studies showcasing strategic product and design leadership across eBay's largest initiatives.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .work-hero {
+            padding: var(--spacing-xl) 0 var(--spacing-lg) 0;
+            background: linear-gradient(135deg, #F0F7FF 0%, #E8F4FF 50%, #FFFFFF 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .work-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .case-study {
+            padding: var(--spacing-xl) 0;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .case-study:last-of-type {
+            border-bottom: none;
+        }
+
+        .case-study-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .case-study h2 {
+            font-size: 2.75rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-sm);
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .case-meta {
+            font-size: 0.85rem;
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: var(--spacing-md);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .case-section {
+            margin: var(--spacing-md) 0;
+        }
+
+        .case-section h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-primary);
+        }
+
+        .case-section p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .case-section ul {
+            padding-left: var(--spacing-md);
+            margin: var(--spacing-sm) 0;
+        }
+
+        .case-section li {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        .case-section strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .impact-metrics {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--spacing-sm);
+            margin: var(--spacing-lg) 0;
+        }
+
+        .metric {
+            text-align: center;
+            padding: var(--spacing-md);
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(15, 98, 254, 0.08);
+            border: 2px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .metric:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(15, 98, 254, 0.15);
+            border-color: var(--primary-color);
+        }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .metric-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        .note {
+            background: linear-gradient(135deg, #F0F7FF 0%, #FFFFFF 100%);
+            border-left: 4px solid var(--primary-color);
+            padding: var(--spacing-md);
+            margin: var(--spacing-lg) 0;
+            border-radius: 12px;
+        }
+
+        .note p {
+            margin: 0;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .note strong {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.svg" alt="CS" class="logo-image">
+                <div class="logo-text">
+                    <span class="logo-name">Cassandra (Casey) Skinner</span>
+                    <span class="logo-tagline">Product & Design Strategy Leader</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="work.html" class="nav-link active">Work</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Work Hero -->
+    <section class="work-hero">
+        <div class="container">
+            <h1 class="hero-title" style="position: relative;">Strategic Work</h1>
+            <p class="hero-subtitle" style="position: relative;">Case studies showcasing product and design leadership, strategic alignment, and process innovation at scale.</p>
+        </div>
+    </section>
+
+    <!-- Case Study 1: E2E Buyer Experience Alignment -->
+    <section class="case-study" id="e2e-buyer-experience" style="background: white;">
+        <div class="container case-study-content">
+            <h2>End-to-End Buyer Experience Alignment</h2>
+            <p class="case-meta">Cross-Team Strategy • Design Consistency • User-Centered Trade-offs</p>
+
+            <div class="impact-metrics">
+                <div class="metric">
+                    <div class="metric-value">$33.6B</div>
+                    <div class="metric-label">Annual GMV</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">35M</div>
+                    <div class="metric-label">Monthly Users</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">↑</div>
+                    <div class="metric-label">Conversion & Revenue</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">↓</div>
+                    <div class="metric-label">Customer Service Calls</div>
+                </div>
+            </div>
+
+            <div class="case-section">
+                <h3>Challenge</h3>
+                <p>eBay's View Item experience spans multiple surfaces—auctions, verticalization, simplification, currency conversion, trust signals, and more—each owned by different teams with different priorities. The challenge: How do you align key jobs-to-be-done across the entire buyer journey with the surfaces where users perform those jobs, while maintaining consistency, simplicity, and transparency end-to-end? And how do you do this when business goals sometimes directly conflict with user-centered principles?</p>
+            </div>
+
+            <div class="case-section">
+                <h3>My Strategic Role</h3>
+                <ul>
+                    <li><strong>Driving cross-team alignment:</strong> Connected fragmented workstreams across auctions, VI verticalization, currency, and trust to create a unified buyer experience strategy</li>
+                    <li><strong>Maintaining user-centered principles:</strong> Kept key JTBD and user needs at the forefront while navigating competing business objectives and technical constraints</li>
+                    <li><strong>Prioritizing strategic trade-offs:</strong> Helped teams make hard decisions about what stays above the fold, what moves below, and what gets deprioritized—balancing conversion impact, buyer trust, and eBay's unique complexity</li>
+                    <li><strong>Ensuring smooth transitions:</strong> Protected consistency and transparency as users move through the journey, preventing friction at handoff points between surfaces</li>
+                </ul>
+            </div>
+
+            <div class="case-section">
+                <h3>Impact</h3>
+                <p>Delivered measurable improvements in conversion and higher revenue from services like sitewide currency conversion, while reducing customer service calls through clearer, more consistent experiences. The alignment work created reusable frameworks for prioritizing content and maintaining user trust across eBay's most complex marketplace experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study 2: Financial Services Trust Strategy -->
+    <section class="case-study" id="financial-services" style="background: #F0F7FF;">
+        <div class="container case-study-content">
+            <h2>Financial Services Trust Strategy</h2>
+            <p class="case-meta">High-Risk Product Launch • AI-Powered Product • Trust-First Design</p>
+
+            <div class="impact-metrics">
+                <div class="metric">
+                    <div class="metric-value">$1.27M</div>
+                    <div class="metric-label">Seller Capital Revenue</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">$83M</div>
+                    <div class="metric-label">Seller Capital Originations</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">Instant</div>
+                    <div class="metric-label">eBay Balance Fund Access</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">$2.9B</div>
+                    <div class="metric-label">UPI GMV Protected</div>
+                </div>
+            </div>
+
+            <div class="case-section">
+                <h3>Challenge</h3>
+                <p>Launch high-risk financial products—seller capital loans, digital wallets, AI financial assistants—where user trust is make-or-break. Sellers won't opt into eBay financial services without deep trust, and bad policies that fail to protect them erode that trust and drive sellers off the platform entirely. The stakes: get trust wrong, and you lose both adoption and the seller base.</p>
+            </div>
+
+            <div class="case-section">
+                <h3>My Strategic Role</h3>
+                <ul>
+                    <li><strong>eBay Seller Capital:</strong> Co-created product strategy and go-to-market approach with partner Liberus, defining how to build trust in a high-risk lending product that asks sellers to take out loans through eBay</li>
+                    <li><strong>AI Co-Pilot:</strong> Drove product and AI strategy for a chatbot helping sellers parse complex regulatory and reporting data into plain English, achieving 5-star rating in beta with hundreds of sellers</li>
+                    <li><strong>eBay Balance UK:</strong> Navigated complex cross-functional dependencies during concurrent "free selling in UK" initiative to maintain user trust while achieving 56% adoption rate</li>
+                    <li><strong>Unpaid Items (UPI) Strategy:</strong> Led initiative reducing unpaid items by 56%, rebuilding seller trust in getting paid and protecting $2.9B annualized GMV</li>
+                    <li><strong>Seller Standards Redesign:</strong> Shaped 2024 redesign to address trust erosion from policies failing to protect sellers</li>
+                </ul>
+            </div>
+
+            <div class="case-section">
+                <h3>Impact</h3>
+                <p>Successfully launched multiple high-risk financial products by making trust the foundation of every decision. Seller Capital beat goals by 55-224%, eBay Balance achieved majority adoption among eligible users, and UPI work protected billions in GMV while actually improving seller experience. Proved that trust-first product development isn't just ethical—it's profitable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study 3: Design & Product Sprint Process Innovation -->
+    <section class="case-study" id="process-innovation" style="background: white;">
+        <div class="container case-study-content">
+            <h2>Design & Product Sprint Process Innovation</h2>
+            <p class="case-meta">Organizational Transformation • Process Innovation • Research Practice Development</p>
+
+            <div class="impact-metrics">
+                <div class="metric">
+                    <div class="metric-value">75%</div>
+                    <div class="metric-label">Sprint Time Reduction</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">10x</div>
+                    <div class="metric-label">Avg Product Backlog Items</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">↑</div>
+                    <div class="metric-label">Research & Design Ownership</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">↑</div>
+                    <div class="metric-label">Cross-Functional Collaboration</div>
+                </div>
+            </div>
+
+            <div class="case-section">
+                <h3>Challenge</h3>
+                <p>Design and research were moving too slowly, creating a painful trade-off: when product managers needed speed and velocity, design and research got left out of the product development lifecycle entirely. Teams were shipping fast, but without discovery—solving problems quickly without validating they were solving the right problems. The risk: building the wrong thing beautifully, at scale.</p>
+            </div>
+
+            <div class="case-section">
+                <h3>My Strategic Role</h3>
+                <ul>
+                    <li><strong>Design sprint toolkit:</strong> Built framework (with design lead) that templatizes workshop planning and rapid validation, reducing planning timelines from 3 months to 3 weeks while producing validated quarterly backlogs</li>
+                    <li><strong>Co-lab program:</strong> Created participatory design program that expanded research access across product and design teams, changing how teams think about traditional UXR and democratizing user insight</li>
+                    <li><strong>AI best practices:</strong> Established guidelines for protecting discovery processes when AI tools make it easy to skip straight to high-fidelity prototyping, defining when to use AI for acceleration vs. when human insight is critical</li>
+                    <li><strong>Org-wide evangelization:</strong> Toolkit evangelized by product leadership as recommended model for balancing execution speed with discovery quality</li>
+                </ul>
+            </div>
+
+            <div class="case-section">
+                <h3>Impact</h3>
+                <p>Design and research stayed in the product development process instead of being cut for speed, protecting discovery while actually accelerating timelines. The toolkit and practices expanded across all product teams, transforming how eBay balances velocity with validation. The result: teams move faster AND solve the right problems—proving you don't have to choose between speed and quality when you fix the process.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="note" style="max-width: 900px; margin: var(--spacing-xl) auto;">
+        <p><strong>Note:</strong> Detailed case studies with specific methodologies, research findings, and additional context are available upon request for serious opportunities. These summaries focus on strategic approach and business impact.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Cassandra Skinner. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="mailto:caskinner23@gmail.com">Email</a>
+                <a href="https://linkedin.com/in/skinnerc23" target="_blank">LinkedIn</a>
+                <a href="resume.html">Resume</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

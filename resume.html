@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Cassandra Skinner</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .resume-body {
+            background: white;
+            padding: var(--spacing-lg) 0;
+        }
+        .resume-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--spacing-lg);
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .download-btn {
+            text-align: center;
+            margin: var(--spacing-lg) 0;
+        }
+        .resume-content {
+            font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            font-weight: 400;
+            color: #222;
+            line-height: 1.4;
+            font-size: 11pt;
+        }
+
+        h1 {
+            font-size: 24pt;
+            margin: 0 0 2px 0;
+            color: #1a1a1a;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+
+        .tagline {
+            font-size: 12pt;
+            color: #2c5aa0;
+            font-weight: 500;
+            margin: 0 0 8px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+
+        .contact {
+            font-size: 9pt;
+            color: #444;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #2c5aa0;
+            padding-bottom: 8px;
+            text-align: center;
+        }
+
+        .contact a {
+            color: #2c5aa0;
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 13pt;
+            font-weight: 500;
+            color: #2c5aa0;
+            margin: 18px 0 8px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #2c5aa0;
+            padding-bottom: 3px;
+        }
+
+        .summary {
+            font-size: 10.5pt;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .expertise {
+            margin-bottom: 15px;
+        }
+
+        .expertise-category {
+            margin-bottom: 8px;
+        }
+
+        .expertise-category strong {
+            color: #1a1a1a;
+            font-weight: 500;
+        }
+
+        .expertise-category span {
+            color: #333;
+        }
+
+        .job-header {
+            margin-top: 12px;
+            margin-bottom: 8px;
+        }
+
+        .job-title {
+            font-weight: 500;
+            font-size: 11pt;
+            color: #1a1a1a;
+        }
+
+        .job-dates {
+            float: right;
+            font-style: italic;
+            color: #555;
+            font-size: 10pt;
+        }
+
+        .company {
+            font-weight: 500;
+            font-size: 12pt;
+            color: #2c5aa0;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            margin: 5px 0 10px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+
+        li strong {
+            color: #1a1a1a;
+        }
+
+        .education-item {
+            margin-bottom: 5px;
+        }
+
+        .education-item strong {
+            font-weight: 500;
+        }
+
+        .tool-category {
+            margin-left: 20px;
+            margin-bottom: 3px;
+        }
+
+        @media print {
+            body {
+                margin: 0.5in;
+            }
+
+            .nav,
+            .footer,
+            .download-btn {
+                display: none !important;
+            }
+
+            .resume-body {
+                padding: 0;
+                background: white;
+            }
+
+            .resume-container {
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.svg" alt="CS" class="logo-image">
+                <div class="logo-text">
+                    <span class="logo-name">Cassandra (Casey) Skinner</span>
+                    <span class="logo-tagline">Product & Design Strategy Leader</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="work.html" class="nav-link">Work</a></li>
+                <li><a href="resume.html" class="nav-link active">Resume</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="resume-body">
+        <div class="download-btn">
+            <a href="Cassandra_Skinner_Resume.pdf" class="btn btn-primary" download>Download PDF</a>
+        </div>
+
+        <div class="resume-container resume-content">
+            <h1>Cassandra (Casey) Skinner, M.A.</h1>
+    <div class="tagline">Product & Design Strategy Leader</div>
+    <div class="contact">
+        <strong>Email:</strong> caskinner23@gmail.com | <strong>Phone:</strong> 734-516-0661 | <strong>Website:</strong> <a href="http://csresearchconsulting.com">csresearchconsulting.com</a> | <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/skinnerc23">linkedin.com/in/skinnerc23</a>
+    </div>
+
+    <h2>Summary</h2>
+    <div class="summary">
+        I lead product and design strategy through deep user research and cross-functional collaboration—currently driving initiatives at eBay that reach 35M users monthly and influence $33.6B in annual GMV. I specialize in spaces where user trust is critical, bridging research insights with product decisions to de-risk strategy and ship experiences that solve real user problems. I integrate AI into products to maximize user value without compromising trust, and drive AI adoption across teams with best practices that accelerate execution without sacrificing discovery and creativity. Known as a dot connector cutting through ambiguity, driving ruthless prioritization, and being a force-multiplier for cross-functional teams to do their best work.
+    </div>
+
+    <h2>Areas of Expertise</h2>
+    <div class="expertise">
+        <div class="expertise-category">
+            <strong>Strategic Leadership:</strong> <span>Executive Advisory, Cross-Organizational Alignment, Strategic Roadmapping, Organizational Transformation, Organization Building & Hiring</span>
+        </div>
+        <div class="expertise-category">
+            <strong>Product & Design:</strong> <span>Product Strategy at Scale, Design Frameworks, Information Architecture, Trust-First Product Development, Ruthless Prioritization</span>
+        </div>
+        <div class="expertise-category">
+            <strong>AI & Innovation:</strong> <span>AI Product Integration, Org-Wide AI Adoption, Research Practice Development, Process Innovation</span>
+        </div>
+        <div class="expertise-category">
+            <strong>Research Impact:</strong> <span>Strategic Insights Translation, Research-Driven Decision Making, Cross-Functional Research Adoption, Mixed-Methods Strategy, Data Analytics & Visualization</span>
+        </div>
+        <div class="expertise-category">
+            <strong>Platforms & Tools:</strong>
+            <div class="tool-category"><strong>Design & Prototyping:</strong> Figma & Figma Make, Vercel & V0, Claude Code</div>
+            <div class="tool-category"><strong>Planning & Resourcing:</strong> Airtable, Monday.com, Jira, Glean</div>
+            <div class="tool-category"><strong>Research & Analytics:</strong> Qualtrics, UserTesting, Amplitude, Gemini, Claude</div>
+        </div>
+    </div>
+
+    <h2>Experience</h2>
+
+    <div class="company">eBay</div>
+
+    <div class="job-header">
+        <span class="job-title">Staff Product & UX Researcher, Core Buyer Experience</span>
+        <span class="job-dates">January 2025 – Present</span>
+        <div style="clear: both;"></div>
+    </div>
+    <ul>
+        <li><strong>Advising VP, SVP, and C-suite on strategic investment and priorities</strong> through executive storytelling and research narratives that drove alignment on High ASP luxury experiences, auctions revitalization, eBay Live vs. core auctions prioritization, and E2E currency conversion while aligning Services + Buyer Experience orgs on shared prioritization principles</li>
+        <li><strong>Leading product and design strategy for eBay's View Item page</strong> (35M users/month, $33.6B annual GMV), partnering with 30+ stakeholders across product, design, and engineering to drive AI-powered personalization, Focus Category verticalization, and trust-building features (eBay guarantees, seller credibility) that increase purchase conversion</li>
+        <li><strong>Building user-centric feature and design frameworks for VI page best practices</strong> to guide initiatives like VI simplification—identifying above-the-fold jobs-to-be-done to ruthlessly prioritize content while balancing conversion impact & buyer trust with eBay's complex use cases that competitors don't face</li>
+        <li><strong>Transforming research practice and AI adoption org-wide</strong>—co-authored UXR career framework, built co-lab program expanding participatory design access across product/design teams, and established AI best practices protecting discovery in product development processes</li>
+        <li><strong>Shaping auctions marketplace strategy</strong> ($2.2B GMV), connecting fragmented workstreams across UPI, cross-border, and revitalization teams through creation of "source of truth" Figma while ruthlessly prioritizing extended bidding expansion (vehicles/collectibles → fashion/electronics) and descoping features for eBay Live resources</li>
+        <li><strong>Built design sprint toolkit and process framework</strong> (with design lead) that reduced planning timelines from 3 months to 3 weeks, templatizing workshop planning to produce validated quarterly backlogs—evangelized by product leadership as model for balancing execution speed with discovery quality</li>
+        <li><strong>Supporting organization building</strong> by playing active roles in hiring loops, making resourcing and headcount cases, onboarding new team members, and ongoing mentoring of UXR, design, and product team members</li>
+    </ul>
+
+    <div class="job-header">
+        <span class="job-title">Senior Product & UX Researcher, Financial Services & Trust</span>
+        <span class="job-dates">April 2022 – December 2024</span>
+        <div style="clear: both;"></div>
+    </div>
+    <ul>
+        <li><strong>Launched eBay Seller Capital</strong>, a high-risk financial product requiring deep user trust, with partner Liberus—$1.27M direct revenue, $83M originations (+55% vs goal), $4.9M program revenue (+224% vs goal) in 6 months</li>
+        <li><strong>Drove eBay AI Co-Pilot strategy</strong>, an AI chatbot helping sellers parse regulatory/reporting data into plain English—5-star rating in beta with hundreds of sellers (later deprioritized)</li>
+        <li><strong>Drove eBay Balance UK launch</strong> (700K+ orders, 56% adoption) while navigating concurrent "free selling in UK" initiative and maintaining user trust</li>
+        <li><strong>Led UPI reduction initiative</strong> (56% decrease), rebuilding seller trust in getting paid and protecting $2.9B annualized GMV without compromising user experience</li>
+        <li><strong>Identified shipping cost risk</strong> in UPI auctions strategy, driving pivot that saves US sellers $22M annually</li>
+        <li><strong>Shaped 2024 Seller Standards redesign</strong> to address trust erosion from policies failing to protect sellers</li>
+        <li><strong>Mentored 3 designers, onboarded 2 researchers</strong> to build Financial Services research capabilities</li>
+        <li>Recognized: 4x eBay Spot Award Winner, 2023 & 2024 Luminary Award Nominee</li>
+    </ul>
+
+    <div class="job-header">
+        <span class="job-title">Product & UX Researcher, Home & Garden</span>
+        <span class="job-dates">July 2021 – April 2022</span>
+        <div style="clear: both;"></div>
+    </div>
+    <ul>
+        <li><strong>Built foundational research roadmap</strong> that established Home & Garden as strategic pillar ($44M+ US market value by 2022)</li>
+        <li>Promoted from contractor to FTE based on strategic impact and cross-functional leadership</li>
+    </ul>
+
+    <div class="company">Odgers Berndtson</div>
+    <div class="job-header">
+        <span class="job-title">Data & Insights Analyst, IdenX</span>
+        <span class="job-dates">April 2021 – July 2021</span>
+        <div style="clear: both;"></div>
+    </div>
+    <ul>
+        <li>Led discovery, market, and design research to drive startup strategy, client projects, and product development</li>
+        <li>Honorable mention: Managed over $200K in client-facing research projects in 3 months</li>
+    </ul>
+
+    <div class="company">Haworth Inc.</div>
+    <div class="job-header">
+        <span class="job-title">Design Researcher, Workplace Design & Innovation</span>
+        <span class="job-dates">January 2020 – April 2021</span>
+        <div style="clear: both;"></div>
+    </div>
+    <ul>
+        <li>Led primary and secondary design research studies to drive product development and strategy</li>
+        <li>Honorable mention: Primary user research informed the development of the Poppy Chair with Tablet Arm which won an HiP Award from Interior Design at NeoCon 2022</li>
+    </ul>
+
+    <div class="company">Brandeis University</div>
+    <div class="job-header">
+        <span class="job-title">Research & Teaching Fellow, Sociology & Social Policy</span>
+        <span class="job-dates">August 2018 – May 2020</span>
+        <div style="clear: both;"></div>
+    </div>
+    <ul>
+        <li>Analyzed longitudinal survey data about entrepreneurship and innovation using multivariate statistics to compare small business owners' demographics, motivations, and success rates over time</li>
+    </ul>
+
+    <div class="company">Haworth Inc.</div>
+    <div class="job-header">
+        <span class="job-title">Graduate Design Research Intern, Workplace Design & Innovation</span>
+        <span class="job-dates">April 2018 – August 2018</span>
+        <div style="clear: both;"></div>
+    </div>
+    <ul>
+        <li>Led primary and secondary design research studies to drive Affordances framework & product development</li>
+    </ul>
+
+    <div class="company">Grand Valley State University</div>
+    <div class="job-header">
+        <span class="job-title">Graduate Researcher, Social Innovation & Entrepreneurship</span>
+        <span class="job-dates">May 2017 – May 2018</span>
+        <div style="clear: both;"></div>
+    </div>
+    <ul>
+        <li>Led research into West Michigan's workforce development ecosystem to identify gaps in user experiences</li>
+        <li>Honorable mention: Secured a research grant worth over $100M over 10 years</li>
+    </ul>
+
+    <div class="job-header">
+        <span class="job-title">Researcher, Social Innovation & Entrepreneurship</span>
+        <span class="job-dates">August 2016 – May 2017</span>
+        <div style="clear: both;"></div>
+    </div>
+    <ul>
+        <li>Managed 2 undergraduate research assistants in facilitating and transcribing in-depth user interviews</li>
+    </ul>
+
+    <div class="job-header">
+        <span class="job-title">Research Consultant, Department of Education</span>
+        <span class="job-dates">January 2016 – July 2017</span>
+        <div style="clear: both;"></div>
+    </div>
+    <ul>
+        <li>Conducted a mixed-method program evaluation of GVSU's Groundswell Lower Grand River Education Initiative</li>
+    </ul>
+
+    <div class="company">Dorothy A. Johnson Center for Philanthropy</div>
+    <div class="job-header">
+        <span class="job-title">Research Assistant, Community Research Institute</span>
+        <span class="job-dates">September 2015 – May 2016</span>
+        <div style="clear: both;"></div>
+    </div>
+    <ul>
+        <li>Analyzed longitudinal survey data about entrepreneurship and innovation using multivariate statistics to compare small business owners' demographics, motivations, and success rates over time</li>
+    </ul>
+
+    <h2>Education</h2>
+    <div class="education-item"><strong>Master of Arts in Sociology</strong> | Brandeis University</div>
+    <div class="education-item"><strong>Master of Arts in Social Policy</strong> | Brandeis University</div>
+    <div class="education-item"><strong>Bachelor of Science in Sociology, Psychology, & Applied Statistics</strong> | Grand Valley State University</div>
+
+    <h2>Community Work</h2>
+    <div class="company">CS Research & Consulting LLC</div>
+    <div class="job-header">
+        <span class="job-title">Principal Researcher & Consultant</span>
+        <span class="job-dates">March 2016 – Present</span>
+        <div style="clear: both;"></div>
+    </div>
+    <ul>
+        <li>Lead & conduct contract research work to identify product and strategy opportunities for small businesses with social missions</li>
+        <li>Mentor graduate students looking to transition from academia to industry UX research</li>
+    </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Cassandra Skinner. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="mailto:caskinner23@gmail.com">Email</a>
+                <a href="https://linkedin.com/in/skinnerc23" target="_blank">LinkedIn</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
