@@ -6,6 +6,27 @@
     <title>Writing | Cassandra Skinner</title>
     <meta name="description" content="Articles on AI integration, UX research practice, and product strategy.">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .writing-hero {
+            padding: var(--spacing-xl) 0 var(--spacing-lg) 0;
+            background: linear-gradient(135deg, #F0F7FF 0%, #E8F4FF 50%, #FFFFFF 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .writing-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -30,10 +51,10 @@
     </nav>
 
     <!-- Writing Header -->
-    <section class="page-header">
+    <section class="writing-hero">
         <div class="container">
-            <h1>Writing</h1>
-            <p class="page-subtitle">Articles on AI integration, UX research practice, and the messy reality of building products at scale.</p>
+            <h1 class="hero-title" style="position: relative; text-align: center;">Writing</h1>
+            <p class="hero-subtitle" style="position: relative; text-align: center; margin-left: auto; margin-right: auto;">Articles on AI integration, UX research practice, and the messy reality of building products at scale.</p>
         </div>
     </section>
 
