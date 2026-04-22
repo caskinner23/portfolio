@@ -581,30 +581,60 @@ h1, h2, h3 {
 /* Responsive Design */
 @media (max-width: 768px) {
     :root {
-        --spacing-md: 32px;
-        --spacing-lg: 56px;
-        --spacing-xl: 80px;
+        --spacing-md: 24px;
+        --spacing-lg: 48px;
+        --spacing-xl: 72px;
+    }
+
+    .container {
+        padding: 0 var(--spacing-sm);
     }
 
     .hero-title {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        line-height: 1.2;
     }
 
     .hero-subtitle {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .hero-stats {
         grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .stat {
+        padding: var(--spacing-sm);
     }
 
     .stat-number {
-        font-size: 2.75rem;
+        font-size: 2.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.85rem;
+    }
+
+    .nav-container {
+        padding: var(--spacing-sm);
     }
 
     .nav-menu {
-        gap: var(--spacing-sm);
-        font-size: 0.85rem;
+        gap: 12px;
+        font-size: 0.8rem;
+    }
+
+    .nav-link {
+        padding: 6px 12px;
+    }
+
+    .logo-name {
+        font-size: 1.1rem;
+    }
+
+    .logo-tagline {
+        font-size: 0.7rem;
     }
 
     .cta-buttons {
@@ -613,6 +643,7 @@ h1, h2, h3 {
 
     .btn {
         text-align: center;
+        width: 100%;
     }
 
     .footer .container {
@@ -621,29 +652,116 @@ h1, h2, h3 {
         text-align: center;
     }
 
-    .expertise-grid,
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--spacing-sm);
+    }
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
     .work-grid {
         grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .articles-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
     }
 
     h2 {
-        font-size: 2.25rem;
+        font-size: 2rem;
+    }
+
+    .logo-image {
+        width: 48px;
+        height: 48px;
+    }
+
+    .hero-intro {
+        font-size: 1rem;
+    }
+
+    .expertise-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .work-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .article-title {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --spacing-sm: 16px;
+        --spacing-md: 20px;
+        --spacing-lg: 40px;
+        --spacing-xl: 56px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .nav-link {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+    }
+
+    .logo-name {
+        font-size: 1rem;
+    }
+
+    .logo-tagline {
+        font-size: 0.65rem;
     }
 
     .logo-image {
         width: 40px;
         height: 40px;
     }
-}
 
-@media (max-width: 480px) {
-    .hero-title {
-        font-size: 2.5rem;
+    h2 {
+        font-size: 1.75rem;
     }
 
-    .nav-menu {
-        flex-wrap: wrap;
-        justify-content: center;
+    .btn {
+        padding: 14px 28px;
+        font-size: 0.9rem;
+    }
+
+    .testimonial-quote {
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding: var(--spacing-md) 0;
     }
 }
 

@@ -134,6 +134,35 @@
             font-weight: 600;
         }
 
+        @media (max-width: 768px) {
+            .impact-metrics {
+                grid-template-columns: repeat(2, 1fr);
+                gap: var(--spacing-sm);
+            }
+
+            .metric {
+                padding: var(--spacing-sm);
+            }
+
+            .metric-value {
+                font-size: 1.8rem;
+            }
+
+            .metric-label {
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .impact-metrics {
+                grid-template-columns: 1fr;
+            }
+
+            .metric-value {
+                font-size: 2rem;
+            }
+        }
+
         .note {
             background: linear-gradient(135deg, #F0F7FF 0%, #FFFFFF 100%);
             border-left: 4px solid var(--primary-color);
